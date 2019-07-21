@@ -1,0 +1,21 @@
+{
+  "name": "boggle_solver",
+  "version": "1.0.0",
+  "description": "Simple web-app to solve boggle game",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Melissa Barca",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "lite-server": "^2.5.3",
+    "popper.js": "^1.15.0"
+  }
+}

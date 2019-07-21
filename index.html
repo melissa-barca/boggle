@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css"> 
+
+  <title>Boggle Solver</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <div class="container">
+      <div class="row row-header">
+        <div class="col-12 col-sm-6">
+          <h1>Boggle Solver</h1>
+          <p>Enter your Boggle board and immediately discover all possible words!</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="row row-content justify-content-center">
+    <div class="col-12 offset-9">
+      <h3>Enter your board</h3>
+    </div>
+    <div class="col-12 col-md-3">
+      <table class="table table-bordered table-condensed" id="letterBoard">
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control" id="1a" /></td>
+            <td><input type="text" class="form-control" id="1b" /></td>
+            <td><input type="text" class="form-control" id="1c" /></td>
+            <td><input type="text" class="form-control" id="1d" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id="2a"/></td>
+            <td><input type="text" class="form-control" id="2b"/></td>
+            <td><input type="text" class="form-control" id="2c"/></td>
+            <td><input type="text" class="form-control" id="2d"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id="3a"/></td>
+            <td><input type="text" class="form-control" id="3b"/></td>
+            <td><input type="text" class="form-control" id="3c"/></td>
+            <td><input type="text" class="form-control" id="3d"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id="4a"/></td>
+            <td><input type="text" class="form-control" id="4b"/></td>
+            <td><input type="text" class="form-control" id="4c"/></td>
+            <td><input type="text" class="form-control" id="4d"/></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="offset-md-4 col-md-10">
+        <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+      </div>
+    </div>
+    <div class="col-12 modal hide" id="results" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Found Words<h4>
+          <button type="button" class="close">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="word-wrap"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p>© Copyright 2019 Melissa Barca</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/hasharray/dist/HashArray.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite; }
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 50px auto;
+  padding: 20px 20x;
+}
+
+.body {
+  padding: 50px 50px 50px 50px;
+  z-index: 0;
+}
+
+.modal {
+  padding: 50px 50px 50px 50px;
+}
+
+.modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+
+.modal-header .close {
+  color: floralwhite; }
+
+.modal-body {
+  background-color: #9575CD; }
+
+.word-wrap {
+  word-wrap: break-word;
+}
