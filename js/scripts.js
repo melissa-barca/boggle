@@ -16,7 +16,7 @@ $(document).ready(function() {
         var trie = new Trie();
         trie.addList(dictionary);
         let words = findWords(boggle, trie);
-        $("#results .modal-body p").html(JSON.stringify(words));
+        $("#results .modal-body p").html(prettyJSON(words));
         $('#results').modal('show');
         console.log(JSON.stringify(words));
       });
@@ -57,6 +57,15 @@ const recursiveFindWords = (boggle, trie, words, visited, row, col, str) => {
     str=str.slice(0, -1); 
     visited[row][col] = 0; 
 };
+
+const prettyJSON = (value) => {
+  let dataArray  = value.map(function(e){
+    return JSON.stringify(e);
+  });
+  let dataString = dataArray.join(", ");
+  dataString = dataString.replace(/["']/g, "")
+  return dataString;
+}
 
 function alphaOnly(event) {
   var key = event.keyCode;`enter code here`
