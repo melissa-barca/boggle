@@ -3,11 +3,12 @@
 Javascript web app to solve the Boggle game using bootstrap 4 and node.js.
 
 Getting Started
+
 Node.js and npm are required to run boggle.
 
 Clone the git repository then run 'npm install' to install dependencies from package.json.
-Run the project with "npm run"
 
+Run the project with "npm run"
 
 Where can we go from the initial attempt?
 - Validate input - should always be one alpha character or 'qu'.
