@@ -8,7 +8,7 @@ Node.js and npm are required to run boggle.
 
 Clone the git repository then run 'npm install' to install dependencies from package.json.
 
-Run the project with "npm run"
+Run the project with "npm start"
 
 Where can we go from the initial attempt?
 - Validate input - should always be one alpha character or 'qu'.
