@@ -57,3 +57,9 @@ const recursiveFindWords = (boggle, trie, words, visited, row, col, str) => {
     str=str.slice(0, -1); 
     visited[row][col] = 0; 
 };
+
+function alphaOnly(event) {
+  var key = event.keyCode;`enter code here`
+  return ((key >= 65 && key <= 90) || key == 8);
+};
+
