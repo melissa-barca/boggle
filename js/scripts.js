@@ -54,7 +54,6 @@ const recursiveFindWords = (boggle, trie, words, visited, row, col, str) => {
           if (i >= 0 && j >= 0 && !Boolean(visited[i][j])) 
             recursiveFindWords(boggle, trie, words, visited, i, j, str);
     }
-    str=str.slice(0, -1); 
     visited[row][col] = 0; 
 };
 

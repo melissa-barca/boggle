@@ -1,9 +1,8 @@
 function Trie() {
   this.head = {
     key: '',
-    parent: null,
     children: {},
-    end: false
+    word: false
   }
 }
 
@@ -15,14 +14,13 @@ Trie.prototype.add = function (word) {
     if (!node.children[word[i]]) {
       newNode = {
         key: word[i],
-        parent: node,
         children: {}
       };
       node.children[word[i]] = newNode;
     }
     node = node.children[word[i]];
     if (i == word.length-1) {
-      node.end = true;
+      node.word = true;
     }
   }
 } 
@@ -45,7 +43,7 @@ Trie.prototype.isPrefixOrWord = function(prefix) {
     else
       return false;
   }
-  if (node.end)
+  if (node.word)
    value=2;
   else
    value=1;
